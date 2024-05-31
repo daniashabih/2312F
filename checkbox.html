@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Countries</h1>
+    <input type="checkbox" name="" id="" value="Pakistan">Pakistan
+    <input type="checkbox" name="" id="" value="Iran">Iran
+    <input type="checkbox" name="" id="" value="China">China
+    <input type="checkbox" name="" id="" value="Japan">Japan
+    <button type="submit" id="btnSubmit">Submit</button>
+<div id="divResult">
+</div>
+<script>
+$(document).ready(function(){
+    $('#btnSubmit').on('click', function(){
+        var selected_countries = [];
+        $("input[type='checkbox']:checked").each(function(){
+            selected_countries.push($(this).val());
+        });
+        $('#divResult').html('You have selected: ' + selected_countries.join(' , ') );
+    });
+});
+</script>
+</body>
+</html>

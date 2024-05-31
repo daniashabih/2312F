@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<input type="text" name="" id="fname">
+<p id="error"></p>
+<button type="submit" onclick="myfunc()">Submit</button>
+
+<script>
+
+
+function myfunc() {
+    
+var name = document.getElementById("fname").value;
+var exp = /^[A-z _.]{3}$/gm;
+if (exp.test(name)) {
+    document.getElementById("error").innerHTML = "Correct Credentials";
+    document.getElementById("error").style.color = "green";
+
+} else {
+    document.getElementById("error").innerHTML = "Incorrect Credentials";
+    document.getElementById("error").style.color = "red";
+}
+
+
+}
+
+
+</script>
+
+</body>
+</html>

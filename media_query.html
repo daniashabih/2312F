@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* mobile */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header,
+            .footer {
+                text-align: center;
+            }
+
+            .main-content {
+                font-size: 14px;
+            }
+        }
+        /* tablet */
+        @media (max-width: 601px) and (max-width: 992px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header,
+            .footer {
+                text-align: left;
+            }
+
+            .main-content {
+                font-size: 16px;
+            }
+        }
+        /* Desktop */
+        @media (max-width: 993px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header,
+            .footer {
+                text-align: left;
+            }
+
+            .main-content {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Responsive Website</h1>
+        </header>
+        <main class="main-content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate iure reprehenderit ullam id corporis
+                magnam quae animi mollitia ipsum voluptatibus, sed odit numquam accusamus, facilis sunt! Ea, quam qui
+                harum eligendi sunt velit quasi quaerat, voluptates optio necessitatibus voluptate tempore corporis
+                doloribus est praesentium modi?
+
+    
+            </p>
+        </main>
+        <footer class="footer">
+            <p>2024 responsive design</p>
+        </footer>
+    </div>
+</body>
+
+</html>

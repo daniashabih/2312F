@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+//func define
+
+    // function print() {
+    //     console.log("Hello");
+    // }
+// func call
+    // print();
+
+//parameterized Function
+
+
+// function myfunc(msg) {
+//     console.log(msg);
+// }
+
+// myfunc("I Love JS");
+
+// function sum(a , b) {
+//     console.log(a+b);
+// }
+// sum(25 , 75);
+
+//return type function
+
+
+// function sum(x , y) {
+//     s = x + y;
+//     return s;
+// }
+// var val = sum(4,5);
+// console.log(val);
+
+
+//Arrow Function
+
+
+// var print = (msg)=>{
+//    console.log(msg);
+// }
+// print("I Love Pakistan");
+
+
+     // var items = [250,645,300,900,50];
+        // for (let index = 0; index < items.length; index++) {
+        //     var offer = items[index]/10;
+        //     items[index]-=offer
+        // }
+        //   document.write(items);
+
+
+//         var companies=["Bloomberg", "Microsoft", "Uber", "Google","IBM","Netflix"]//array created;
+
+// document.write("PART A:Remove the first company from the array","<br>");
+// companies.shift();
+// document.write(companies);
+// document.write("<br>");
+// document.write("<br>");
+// document.write("PART B:Remove Uber & Add Ola in its place","<br>");
+// companies.splice(1,1,"Ola");
+// document.write(companies);
+// document.write("<br>");
+// document.write("<br>");
+// document.write("PART C:Add Amazon at the end","<br>");
+// companies.push("Amazon");
+// document.write(companies);
+     
+     
+     
+     
+// var companies=["Bloomberg", "Microsoft", "Uber", "Google","IBM","Netflix"]
+     
+//      companies.forEach(element => {
+//         console.log(element);
+//      });
+     
+
+//Objects
+
+var employee = {
+    name : "Ali",
+    age : 23,
+    email : "abc@gmail.com",
+    address : {
+        city : "Karachi",
+        country : "Pakistan"
+    },
+    food : ["Biryani" , "Nihari" , "Gulab Jamun"],
+    salary : ()=>{
+        return 2000000;
+    }
+}
+console.log(employee.address.city);
+// console.log(employee.salary());
+document.write("<table border = '2'>");
+   
+for (var key in employee) {
+document.write("<tr>"); 
+    document.write("<td>" , key,"<td>" );
+    document.write("<td>" ,employee[key],"<td>");
+ document.write("</tr>");       
+  
+}
+
+ 
+document.write("</table>");
+     </script>
+
+
+
+</body>
+</html>

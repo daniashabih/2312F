@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+        .container {
+            padding: 50px;
+            margin: 50px;
+            border: 2px solid black;
+            background-color: lavender;
+
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="test">JQUERY</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, commodi praesentium atque dolorem
+            exercitationem soluta cumque error! Perferendis eveniet perspiciatis provident, reprehenderit ex qui odit,
+            inventore labore in ad aliquid sunt ipsam impedit enim est? Magnam, ipsa? Velit, illum repudiandae.
+            Excepturi laboriosam accusamus ut veritatis?</p>
+        <ul>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>PineApple</li>
+            <li>Grapes</li>
+        </ul>
+    </div>
+
+
+    <button id="hidebtn">Hide</button>
+    <button id="showbtn">Show</button>
+    <button id="togglebtn">Toggle</button>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadetoggle">Fade Toggle</button>
+    <button id="fadeto">Fade To</button>
+    <button id="appendto">Append To</button>
+    <button id="prependto">Prepend To</button>
+    <button id="eventoff">Event Off</button>
+    <script>
+        // $(document).ready(function(){
+        //  $(".container").css("border" , "2px solid black")
+        //  $(".container").css("padding" , "50px")
+        //  $(".container").css("margin" , "50px")
+        //  $("h1 , p").css("text-align" , "center")
+        //  $(".container").css("background-color" , "yellow")
+        //  $("*").css("color" , "black")
+        //  $("ul li:lt(2)").css("color" , "red")
+        //  $("ul li:gt(2)").css("color" , "green")
+        //  $("ul li:eq(2)").css("color" , "blue")
+        //  $(".container").click(function () {
+        //     $(".container").css("background-color" , "yellow")
+        //  });
+        //  $(".container").dblclick(function () {
+        //     $(".container").css("background-color" , "pink")
+        //  });
+        //  $(".container").contextmenu(function () {
+        //     $(".container").css("background-color" , "aqua")
+        //  });
+        //  $(".container").mouseenter(function () {
+        //     $(".container").css("background-color" , "lavender")
+        //  });
+        //  $(".container").mouseleave(function () {
+        //     $(".container").css("background-color" , "lightgreen")
+        //  });
+        //  $(".container").mousedown(function () {
+        //     $(".container").css("background-color" , "red")
+        //  });
+        //  $(".container").mouseup(function () {
+        //     $(".container").css("background-color" , "orange")
+        //  });
+        //  $(".container").mouseover(function () {
+        //     $(".container").css("background-color" , "orange")
+        //  }); //same as mouse enter
+        //  $(".container").mouseout(function () {
+        //     $(".container").css("background-color" , "orange")
+        //  });
+        //  $(".container").mousemove(function () {
+        //     $(".container").css("background-color" , "orange")
+        //  }); // same as mouse enter
+        // });
+
+
+        //Keyboard Events 
+
+        //Keypress , keyup , keydown
+
+        $(document).ready(function () {
+            //on / off events
+            $('.container').on({
+                click: function () {
+                    $('.container').css("background-color", "red");
+                },
+                mouseenter: function () {
+                    $('.container').css("background-color", "yellow");
+                },
+                mouseleave: function () {
+                    $('.container').css("background-color", "green");
+                }
+            });
+$('#eventoff').click(function(){
+    $('.container').off("mouseenter mouseleave");
+})
+
+
+
+
+
+
+
+            // $('body').keypress(function(){
+            //     $(this).css("background-color","orange");
+            // });
+            // $('body').keyup(function(){
+            //     $(this).css("background-color","green");
+            // });
+            // $('body').keydown(function(){
+            //     $(this).css("background-color","pink");
+            // });
+
+            // $('#hidebtn').click(function(){
+            //     $('.container').hide(3000);
+            // })
+            // $('#showbtn').click(function(){
+            //     $('.container').show(3000);
+            // })
+            // $('#togglebtn').click(function(){
+            //     $('.container').toggle(3000);
+            // })
+            // $('#fadein').click(function(){
+            //     $('.container').fadeIn(3000);
+            // })
+            // $('#fadeout').click(function(){
+            //     $('.container').fadeOut(3000);
+            // })
+            // $('#fadetoggle').click(function(){
+            //     $('.container').fadeToggle(3000);
+            // })
+            // $('#fadeto').click(function(){
+            //     $('.container').fadeTo(3000,0.5);
+            // })
+            // $("#appendto").click(function(){
+            //     $("<li>Hello</li>").appendTo(".container");
+            // })
+            // $("#prependto").click(function(){
+            //     $("<h1>Hello</h1>").prependTo(".container");
+            // })
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

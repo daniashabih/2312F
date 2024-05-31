@@ -1,0 +1,128 @@
+Loops:
+
+
+1. For Loop
+2. While Loop
+3. Do-While Loop
+
+#syntax
+
+while(condition){
+statement
+}
+
+do{
+statement
+}
+while(condition)
+
+
+for loop
+for (initialization ; condition ; increment/decrement)
+
+
+Functions & Methods:
+
+block of code that perform specific task and can be invoked whenever needed.
+
+Methods:
+
+console.log (.log) -> Method
+
+
+Function Definition 
+#syntax 
+
+function funcname(){
+//do some work
+} 
+
+#syntax
+
+//Parameterized Function
+
+parameter act as a variable
+
+function funcname(num1 , num2){
+//do some work
+}
+
+
+//return type function
+
+function funcname(count){
+//statement
+return count;
+}
+Built in Function:
+alert() , confirm() , parseInt() , parseFloat() , prompt() , eval()
+
+
+JQUERY
+JavaScript Lightweight Library
+
+JavaScript
+Long Selector , Complex Animation , Lengthy DOM Manipulation , Length Ajax
+Coding
+
+Motive of Jquery 
+Write less , Do More 
+
+Advantages JQuery
+- Short Selector 
+- Variety of animation
+- Easy DOM Manipulation
+- Easy CSS Styling
+- Simple Ajax Code
+
+
+id , class , tagname
+
+JavaScript
+document.getElementByID("idname")
+JQUERY
+$("#idname")
+document.getElementsbyClass("classname")
+$(".classname")
+document.getElementbyTagname("h1")
+$("h1")
+Benfits of JQUERY
+- Browser Indepent
+- Increase coding speed 
+
+Implementation
+- Download
+- CDN(Content Delivery Network)
+
+#syntax
+$(document).ready(function(){
+//further jquery code
+});
+$(document)----> selector(Target DOM ELement)
+.ready()----> Method(work to do)
+
+Advanced Selector
+
+target all the tags 
+$("*")
+Parent child selector
+$("ul li")
+multiple classes
+$(".abc , .xyz")
+multiple tag names
+$("h1 , p , div")
+pseudoclass
+$("p:first")
+$("p:last")
+targeting li
+$("li:even")
+$("li:odd")
+
+Mouse Events
+- click()
+- dblclick()
+- context menu() //rightclick
+- mouseenter()
+- mouseleave()
+
+
